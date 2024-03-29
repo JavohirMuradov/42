@@ -59,12 +59,12 @@ const Hero = () => {
             repeat={Infinity} />
         </h2>
         <p className="max-w-lg text-lg">
-          ⚡️ 42 kun o'z ustingizda ishlang va kelajagingiz sari yo'l toping!
+          ⚡️ {Changer("42 kun o'z ustingizda ishlang va kelajagingiz sari yo'l toping!", "Работайте над собой 42 дня и найдите свой путь в будущее!")}
         </p>
         <div className='flex flex-col md:flex-row items-start gap-2'>
           <a className={`inline-flex items-center justify-center text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 ${ThemeChanger("bg-[#0f172a] hover:bg-[#0f172a]/90 text-white", "bg-[#f8fafc] hover:bg-[#f8fafc]/90 text-[#0f172a]")} text-primary-foreground h-11 rounded-md px-8 md:text-xl md:py-8`} href="/courses">
             <img alt="ZapIcon" loading="lazy" width="24" height="24" decoding="async" data-nimg="1" className="mr-2" srcSet="https://42.uz/_next/image?url=%2Fanimated%2FZapIcon-64.gif&amp;w=32&amp;q=75 1x, /_next/image?url=%2Fanimated%2FZapIcon-64.gif&amp;w=48&amp;q=75 2x" src="https://42.uz/_next/image?url=%2Fanimated%2FZapIcon-64.gif&w=32&q=75" style={{ color: 'transparent' }} />
-            Ishtirok etish
+            {Changer("Ishtirok etish", "Принять участие")}
           </a>
         </div>
       </div>

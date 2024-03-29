@@ -1,7 +1,7 @@
 import Layout from "./Layout/Layout"
 import Main from "./Main/Main"
-import styles from "../tailwind.config"
-import ThemeChanger from "./utils/ThemeChanger"
+import 'swiper/css';
+import 'swiper/css/pagination';
 
 function App() {
   return (

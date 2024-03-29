@@ -1,5 +1,6 @@
 import React from 'react'
 import ThemeChanger from '../../utils/ThemeChanger'
+import Changer from '../../utils/Changer'
 
 const Section2 = () => {
     return (
@@ -7,9 +8,9 @@ const Section2 = () => {
             <div className="z-10 relative flex flex-col md:flex-row items-end">
                 <div className="flex flex-col items-start space-y-4 text-left py-4">
                     <h2 className="font-heading text-3xl font-semibold leading-[1.1] sm:text-3xl md:text-6xl">
-                        Sizni nima kutmoqda?</h2>
+                        {Changer("Sizni nima kutmoqda?", "Что вас ждет?")}</h2>
                     <p className="text-left max-w-[65%] leading-normal text-mutedForeground sm:text-lg sm:leading-7">
-                        Interaktiv dasturlashni o'rganish muhiti orqali proffessionllardan dasturlash asoslarini 42 kun ichida o'rganing!
+                        {Changer("Interaktiv dasturlashni o'rganish muhiti orqali proffessionllardan dasturlash asoslarini 42 kun ichida o'rganing!", "Изучите основы программирования у профессионалов в интерактивной среде обучения программированию за 42 дня!")}
                     </p>
                 </div>
                 <img alt="team" loading="lazy" width="200" height="200" decoding="async" data-nimg="1" className={`relative -mb-4 ${ThemeChanger("filter invert-0", "filter invert-[0.9]")}`} style={{ color: 'transparent' }} src="https://42.uz/home/look_down.svg" />
@@ -20,10 +21,10 @@ const Section2 = () => {
                         <img alt="team" loading="lazy" width="200" height="200" decoding="async" data-nimg="1" className={`w-20 h-20 ${ThemeChanger("filter invert-0", "filter invert-[0.9]")}`} style={{ color: 'transparent' }} src="https://42.uz/home/features/interactive.svg" />
                         <div className="space-y-2">
                             <h3 className="font-bold">
-                                Interaktiv darslar
+                                {Changer("Interaktiv darslar", "Интерактивные уроки")}
                             </h3>
                             <p className="text-sm text-mutedForeground">
-                                O'zingizga qulay vaqtingizda dasturlashni o'rganing
+                                {Changer("O'zingizga qulay vaqtingizda dasturlashni o'rganing", "Научитесь программировать в удобное для вас время")}
                             </p>
                         </div>
                     </div>
@@ -33,9 +34,10 @@ const Section2 = () => {
                         <img alt="team" loading="lazy" width="200" height="200" decoding="async" data-nimg="1" className={`w-20 h-20 ${ThemeChanger("filter invert-0", "filter invert-[0.9]")}`} style={{ color: 'transparent' }} src="https://42.uz/home/features/books.svg" />
                         <div className="space-y-2">
                             <h3 className="font-bold">
-                                Yuqori sifatdagi darslar
+                                {Changer("Yuqori sifatdagi darslar", "Уроки высокого качества")}
                             </h3>
-                            <p className="text-sm text-mutedForeground">Qiziqarli darslarni 42 kun mobaynida o'rganing
+                            <p className="text-sm text-mutedForeground">
+                                {Changer("Qiziqarli darslarni 42 kun mobaynida o'rganing", "Изучайте увлекательные уроки в течение 42 дней")}
                             </p>
                         </div>
                     </div>
@@ -45,10 +47,10 @@ const Section2 = () => {
                         <img alt="team" loading="lazy" width="200" height="200" decoding="async" data-nimg="1" className={`w-20 h-20 ${ThemeChanger("filter invert-0", "filter invert-[0.9]")}`} style={{ color: 'transparent' }} src="https://42.uz/home/features/mix.svg" />
                         <div className="space-y-2">
                             <h3 className="font-bold">
-                                Kross o'rganish imkoniyati
+                                {Changer("Kross o'rganish imkoniyati", "Возможность перекрестного обучения")}
                             </h3>
                             <p className="text-sm text-mutedForeground">
-                                42 kun ichida 3 yo'nalishda dasturlash asoslarini o'rganing
+                                {Changer("42 kun ichida 3 yo'nalishda dasturlash asoslarini o'rganing", "Изучите основы программирования за 42 дня в 3 направлениях")}
                             </p>
                         </div>
                     </div>
@@ -59,10 +61,10 @@ const Section2 = () => {
                         <img alt="team" loading="lazy" width="200" height="200" decoding="async" data-nimg="1" className={`w-20 h-20 ${ThemeChanger("filter invert-0", "filter invert-[0.9]")}`} style={{ color: 'transparent' }} src="https://42.uz/home/features/backend.svg" />
                         <div className="space-y-2">
                             <h3 className="font-bold">
-                                Backend Asoslari
+                                {Changer("Backend Asoslari", "Основы Бэкэнда")}
                             </h3>
                             <p className="text-sm text-mutedForeground">
-                                Backend asoslari bilan tanishing
+                                {Changer("Backend asoslari bilan tanishing", "Познакомьтесь с основами бэкэнда")}
                             </p>
                         </div>
                     </div>
@@ -72,10 +74,10 @@ const Section2 = () => {
                         <img alt="team" loading="lazy" width="200" height="200" decoding="async" data-nimg="1" className={`w-20 h-20 ${ThemeChanger("filter invert-0", "filter invert-[0.9]")}`} style={{ color: 'transparent' }} src="https://42.uz/home/features/frontend.svg" />
                         <div className="space-y-2">
                             <h3 className="font-bold">
-                                Frontend Asoslari
+                                {Changer("Frontend Asoslari", "Основы Фронтэнда")}
                             </h3>
                             <p className="text-sm text-mutedForeground">
-                                Frontend asoslari bilan tanishing
+                                {Changer("Frontend asoslari bilan tanishing", "Познакомьтесь с основами фронтэнда")}
                             </p>
                         </div>
                     </div>
@@ -85,10 +87,10 @@ const Section2 = () => {
                         <img alt="team" loading="lazy" width="200" height="200" decoding="async" data-nimg="1" className={`w-20 h-20 ${ThemeChanger("filter invert-0", "filter invert-[0.9]")}`} style={{ color: 'transparent' }} src="https://42.uz/home/features/mobile.svg" />
                         <div className="space-y-2">
                             <h3 className="font-bold">
-                                Mobil dasturlash asoslari
+                                {Changer("Mobil dasturlash asoslari", "Основы мобильного программирования")}
                             </h3>
                             <p className="text-sm text-mutedForeground">
-                                Mobil dasturlash asoslari bilan tanishing
+                                {Changer("Mobil dasturlash asoslari bilan tanishing", "Познакомьтесь с основами мобильного программирования")}
                             </p>
                         </div>
                     </div>
