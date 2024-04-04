@@ -1,20 +1,22 @@
 import React from 'react'
 import ThemeChanger from '../../utils/ThemeChanger'
+import { useTranslation } from 'react-i18next'
 
 const Section4 = () => {
+    var { t } = useTranslation()
     return (
-        <section className="space-y-6 pt-36 dark:bg-transparent" id="team">
+        <section className="space-y-6 pt-36 dark:bg-transparent container" id="team">
             <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
                 <h2 className="font-heading text-3xl font-semibold leading-[1.1] sm:text-3xl md:text-6xl">
-                    Jamoa
+                    {t("section4.h1")}
                 </h2>
                 <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
-                    Xalqaro tajribaga ega mutaxassislar bilan birga dasturlashni o'rganing
+                    {t("section4.p")}
                 </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-4">
                 <div className="rounded-lg border bg-card text-card-foreground shadow-sm hover:bg-secondary cursor-default transition-all ease-in-out duration-200">
-                    <div className="flex flex-col space-y-1.5 p-6 text-center items-center gap-2">
+                    <div className="flex flex-col space-y-1.5 h-[270px] p-6 text-center items-center gap-2">
                         <img alt="Azimjon Pulatov's profile" loading="lazy" width="120" height="120" decoding="async" data-nimg="1" className="rounded-full" style={{ color: 'transparent' }} srcSet="https://42.uz/_next/image?url=%2Fauthors%2Fazimjon.jpg&amp;w=128&amp;q=75 1x, https://42.uz/_next/image?url=%2Fauthors%2Fazimjon.jpg&amp;w=256&amp;q=75 2x" src="https://42.uzhttps://42.uz/_next/image?url=%2Fauthors%2Fazimjon.jpg&amp;w=256&amp;q=75" />
                         <h3 className="text-2xl font-semibold leading-none tracking-tight">
                             Azimjon Pulatov
@@ -46,7 +48,7 @@ const Section4 = () => {
                     </div>
                 </div>
                 <div className="rounded-lg border bg-card text-card-foreground shadow-sm hover:bg-secondary cursor-default transition-all ease-in-out duration-200">
-                    <div className="flex flex-col space-y-1.5 p-6 text-center items-center gap-2">
+                    <div className="flex flex-col space-y-1.5 h-[270px] p-6 text-center items-center gap-2">
                         <img alt="Muhammadyusuf Abdullaev's profile" loading="lazy" width="120" height="120" decoding="async" data-nimg="1" className="rounded-full" style={{ color: 'transparent' }} srcSet="https://42.uz/_next/image?url=%2Fauthors%2Fyusuf-mobile.jpg&amp;w=128&amp;q=75 1x, https://42.uz/_next/image?url=%2Fauthors%2Fyusuf-mobile.jpg&amp;w=256&amp;q=75 2x" src="https://42.uzhttps://42.uz/_next/image?url=%2Fauthors%2Fyusuf-mobile.jpg&amp;w=256&amp;q=75" />
                         <h3 className="text-2xl font-semibold leading-none tracking-tight">
                             Muhammadyusuf Abdullaev
@@ -80,7 +82,7 @@ const Section4 = () => {
                     </div>
                 </div>
                 <div className="rounded-lg border bg-card text-card-foreground shadow-sm hover:bg-secondary cursor-default transition-all ease-in-out duration-200">
-                    <div className="flex flex-col space-y-1.5 p-6 text-center items-center gap-2">
+                    <div className="flex flex-col space-y-1.5 h-[270px] p-6 text-center items-center gap-2">
                         <img alt="Jasurbek Zokirov's profile" loading="lazy" width="120" height="120" decoding="async" data-nimg="1" className="rounded-full" style={{ color: 'transparent' }} srcSet="https://42.uz/_next/image?url=%2Fauthors%2Fjasurbek.jpg&amp;w=128&amp;q=75 1x, https://42.uz/_next/image?url=%2Fauthors%2Fjasurbek.jpg&amp;w=256&amp;q=75 2x" src="https://42.uz/_next/image?url=%2Fauthors%2Fjasurbek.jpg&amp;w=256&amp;q=75" />
                         <h3 className="text-2xl font-semibold leading-none tracking-tight">
                             Jasurbek Zokirov
@@ -114,7 +116,7 @@ const Section4 = () => {
                     </div>
                 </div>
                 <div className="rounded-lg border bg-card text-card-foreground shadow-sm hover:bg-secondary cursor-default transition-all ease-in-out duration-200">
-                    <div className="flex flex-col space-y-1.5 p-6 text-center items-center gap-2">
+                    <div className="flex flex-col space-y-1.5 h-[270px] p-6 text-center items-center gap-2">
                         <img alt="Otabek Nurmatov's profile" loading="lazy" width="120" height="120" decoding="async" data-nimg="1" className="rounded-full" style={{ color: 'transparent' }} srcSet="https://42.uz/_next/image?url=%2Fauthors%2Fotabek.jpg&amp;w=128&amp;q=75 1x, https://42.uz/_next/image?url=%2Fauthors%2Fotabek.jpg&amp;w=256&amp;q=75 2x" src="https://42.uz/_next/image?url=%2Fauthors%2Fotabek.jpg&amp;w=256&amp;q=75" />
                         <h3 className="text-2xl font-semibold leading-none tracking-tight">
                             Otabek Nurmatov

@@ -1,37 +1,30 @@
-import { Carousel } from '@material-tailwind/react'
 import React from 'react'
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
-import ThemeChanger from '../../utils/ThemeChanger';
+import { useTranslation } from 'react-i18next';
+// import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+// import ThemeChanger from '../../utils/ThemeChanger';
+// import { Swiper, SwiperSlide } from 'swiper/react';
+// import SwiperMy from './SwiperMy';
 
 const Section5 = () => {
+    var { t } = useTranslation()
     return (
-        <section className="pt-3" id="reviews">
+        <section className="pt-3 container" id="reviews">
             <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
                 <h2 className="font-heading text-3xl font-semibold leading-[1.1] sm:text-3xl md:text-6xl">
-                    Bizning o'quvchilar
+                    {t("section5.h1")}
                 </h2>
                 <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
-                    O'quvchilarimiz nima deydi va ularning natijalari bilan tanishing.
+                    {t("section5.p")}
                 </p>
             </div>
             <img alt="team" loading="lazy" width="820" height="200" decoding="async" data-nimg="1" className="w-full md:w-2/3 mx-auto dark:filter dark:invert-[0.1]" style={{ color: "transparent" }} src="https://42.uz/home/heads.svg" />
-            <Swiper
-                modules={[Navigation, Pagination, Scrollbar, A11y]}
-                spaceBetween={100}
-                slidesPerView={2}
-                navigation
-                pagination={{ clickable: true }}
-                scrollbar={{ draggable: true }}
-                loop={true}
-                className='mt-10 hidden lg:block'
-            >
+            {/* <SwiperMy>
                 <SwiperSlide className='w-full h-full'>
-                    <div className='h-[400px]'>
+                    <div className='2xl:h-[500px]'>
                         <div className="px-2">
                             <div className="rounded-lg border bg-card text-card-foreground shadow-sm rounded-b-none border-none">
                                 <div className="p-6 bg-secondary pt-5 flex gap-2 items-start flex-col rounded-t-lg rounded-b-none border">
-                                    <div className="flex gap-4 items-center">
+                                    <div className="flex gap-4 items-center h-[100px]">
                                         <img alt="Javokhirbek Khaydaraliev" loading="lazy" width="100" height="100" decoding="async" data-nimg="1" className="bg-primary-foreground" style={{ color: "transparent", borderRadius: "50%", width: "72px", height: "72px" }} src="https://42.uz/_next/image?url=%2Fstudents%2F1688970568501.jpeg&w=128&q=75" />
                                         <div className="flex flex-col text-left">
                                             <h2 className=" text-xl font-semibold">
@@ -91,11 +84,11 @@ const Section5 = () => {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className='w-full h-full'>
-                    <div className='h-[400px]'>
+                    <div className='2xl:h-[500px]'>
                         <div className="px-2">
                             <div className="rounded-lg border bg-card text-card-foreground shadow-sm rounded-b-none border-none">
                                 <div className="p-6 bg-secondary pt-5 flex gap-2 items-start flex-col rounded-t-lg rounded-b-none border">
-                                    <div className="flex gap-4 items-center">
+                                    <div className="flex gap-4 items-center h-[100px]">
                                         <img alt="Begnazar Akhmadjonov" loading="lazy" width="100" height="100" decoding="async" data-nimg="1" className="bg-primary-foreground" style={{ color: "transparent", borderRadius: "50%", width: "72px", height: "72px" }} src="https://42.uz/_next/image?url=%2Fstudents%2F1688940135044.jpeg&w=128&q=75" />
                                         <div className="flex flex-col text-left">
                                             <h2 className=" text-xl font-semibold">
@@ -162,11 +155,11 @@ const Section5 = () => {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className='w-full h-full'>
-                    <div className='h-[400px]'>
+                    <div className='2xl:h-[500px]'>
                         <div className="px-2">
                             <div className="rounded-lg border bg-card text-card-foreground shadow-sm rounded-b-none border-none">
                                 <div className="p-6 bg-secondary pt-5 flex gap-2 items-start flex-col rounded-t-lg rounded-b-none border">
-                                    <div className="flex gap-4 items-center">
+                                    <div className="flex gap-4 items-center h-[100px]">
                                         <img alt="Shukhrat Mirrakhimov" loading="lazy" width="100" height="100" decoding="async" data-nimg="1" className="bg-primary-foreground" style={{ color: "transparent", borderRadius: "50%", width: "72px", height: "72px" }} src="https://42.uz/_next/image?url=%2Fstudents%2F1580794557770.jpeg&w=128&q=75" />
                                         <div className="flex flex-col text-left">
                                             <h2 className=" text-xl font-semibold">
@@ -232,11 +225,11 @@ const Section5 = () => {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className='w-full h-full'>
-                    <div className='h-[400px]'>
+                    <div className='2xl:h-[500px]'>
                         <div className="px-2">
                             <div className="rounded-lg border bg-card text-card-foreground shadow-sm rounded-b-none border-none">
                                 <div className="p-6 bg-secondary pt-5 flex gap-2 items-start flex-col rounded-t-lg rounded-b-none border">
-                                    <div className="flex gap-4 items-center">
+                                    <div className="flex gap-4 items-center h-[100px]">
                                         <img alt="Mirvohid Azimov" loading="lazy" width="100" height="100" decoding="async" data-nimg="1" className="bg-primary-foreground" style={{ color: "transparent", borderRadius: "50%", width: "72px", height: "72px" }} src="https://42.uz/_next/image?url=%2Fstudents%2F1652076819849.jpeg&w=128&q=75" />
                                         <div className="flex flex-col text-left">
                                             <h2 className=" text-xl font-semibold">
@@ -302,7 +295,7 @@ const Section5 = () => {
                         </div>
                     </div>
                 </SwiperSlide>
-            </Swiper>
+            </SwiperMy>
             <Swiper
                 modules={[Navigation, Pagination, Scrollbar, A11y]}
                 spaceBetween={100}
@@ -311,10 +304,10 @@ const Section5 = () => {
                 pagination={{ clickable: true }}
                 scrollbar={{ draggable: true }}
                 loop={true}
-                className='mt-10 block lg:hidden'
+                className='mt-10 block 2xl:hidden'
             >
                 <SwiperSlide className='w-full h-full'>
-                    <div className='h-[400px]'>
+                    <div className='2xl:h-[500px]'>
                         <div className="px-2">
                             <div className="rounded-lg border bg-card text-card-foreground shadow-sm rounded-b-none border-none">
                                 <div className="p-6 bg-secondary pt-5 flex gap-2 items-start flex-col rounded-t-lg rounded-b-none border">
@@ -378,7 +371,7 @@ const Section5 = () => {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className='w-full h-full'>
-                    <div className='h-[400px]'>
+                    <div className='2xl:h-[500px]'>
                         <div className="px-2">
                             <div className="rounded-lg border bg-card text-card-foreground shadow-sm rounded-b-none border-none">
                                 <div className="p-6 bg-secondary pt-5 flex gap-2 items-start flex-col rounded-t-lg rounded-b-none border">
@@ -449,7 +442,7 @@ const Section5 = () => {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className='w-full h-full'>
-                    <div className='h-[400px]'>
+                    <div className='2xl:h-[500px]'>
                         <div className="px-2">
                             <div className="rounded-lg border bg-card text-card-foreground shadow-sm rounded-b-none border-none">
                                 <div className="p-6 bg-secondary pt-5 flex gap-2 items-start flex-col rounded-t-lg rounded-b-none border">
@@ -519,7 +512,7 @@ const Section5 = () => {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className='w-full h-full'>
-                    <div className='h-[400px]'>
+                    <div className='2xl:h-[500px]'>
                         <div className="px-2">
                             <div className="rounded-lg border bg-card text-card-foreground shadow-sm rounded-b-none border-none">
                                 <div className="p-6 bg-secondary pt-5 flex gap-2 items-start flex-col rounded-t-lg rounded-b-none border">
@@ -589,7 +582,7 @@ const Section5 = () => {
                         </div>
                     </div>
                 </SwiperSlide>
-            </Swiper>
+            </Swiper> */}
         </section>
     )
 }

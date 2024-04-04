@@ -1,30 +1,31 @@
 import React from 'react'
-import Changer from '../../utils/Changer'
 import ThemeChanger from '../../utils/ThemeChanger'
+import { useTranslation } from 'react-i18next'
 
 const Footer = () => {
+    var { t } = useTranslation()
     return (
         <footer className="bg-background border-t">
             <div className="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-12 lg:px-8">
                 <nav className="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12" aria-label="Footer">
                     <div className="pb-6 flex items-center justify-center">
                         <a className="inline-flex items-center justify-center rounded-md text-sm font-semibold ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 text-primary underline-offset-4 hover:underline h-10 px-4 py-2" href="/#team">
-                            {Changer("Biz haqimizda", "О нас", "About Us")}
+                            {t("footer.haqimizda")}
                         </a>
                     </div>
                     <div className="pb-6 flex items-center justify-center">
                         <a className="inline-flex items-center justify-center rounded-md text-sm font-semibold ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 text-primary underline-offset-4 hover:underline h-10 px-4 py-2" href="/courses">
-                            {Changer("Kurslar", "Курсы", "Courses")}
+                            {t("footer.Kurslar")}
                         </a>
                     </div>
                     <div className="pb-6 flex items-center justify-center">
                         <a className="inline-flex items-center justify-center rounded-md text-sm font-semibold ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 text-primary underline-offset-4 hover:underline h-10 px-4 py-2" href="https://youtube.com/@qirikki">
-                            {Changer("42Podcast", "42Подкаст", "42Podcast")}
+                            {t("footer.Podcast")}
                         </a>
                     </div>
                     <div className="pb-6 flex items-center justify-center">
                         <a className="inline-flex items-center justify-center rounded-md text-sm font-semibold ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 text-primary underline-offset-4 hover:underline h-10 px-4 py-2" href="/faq">
-                            {Changer("FAQ", "FAQ", "FAQ")}
+                            {t("footer.FAQ")}
                         </a>
                     </div>
                 </nav>
@@ -71,7 +72,6 @@ const Footer = () => {
                     </a>
                 </div>
                 <p className="mt-10 text-center text-xs leading-5 text-[#02081799]">
-                    © 2023 QIRIKKI LLC. {Changer("Barcha huquqlar himoyalangan.", "Все права защищены.", "All rights reserved.")}
                 </p>
                 <div className="flex items-center justify-center gap-2 text-xs text-foreground/80">
                     <a href="/terms">Terms and Conditions</a>

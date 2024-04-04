@@ -6,7 +6,6 @@ const Theme = ({ children }) => {
     var [theme, setTheme] = useState("light")
     useEffect(() => {
         localStorage.setItem("theme", theme === "light" ? "light" : "dark")
-        console.log(theme);
     }, [theme])
     return (
         <ThemeApi.Provider value={{ theme, setTheme }}>
